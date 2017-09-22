@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <env name="GAZEBO_MODEL_PATH" value="$(find rcprg_gazebo_utils)/data/gazebo/models" />
+  <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen" args="--verbose"/>
+</launch>

@@ -1,0 +1,14 @@
+<package>
+  <name>rcprg_gazebo_utils</name>
+  <version>1.0.0</version>
+  <description>
+    This package contains worlds, models and scripts for Gazebo.
+  </description>
+  <author email="dawid.seredynski@gmail.com">Dawid Seredynski</author>
+  <maintainer email="dawid.seredynski@gmail.com">Dawid Seredynski</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
