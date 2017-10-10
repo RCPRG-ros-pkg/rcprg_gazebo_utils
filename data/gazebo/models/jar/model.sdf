@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
-  <model name="jar_marker">
+  <model name="jar">
     <link name="link">
-      <gravity>false</gravity>
+      <gravity>true</gravity>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.2</mass>

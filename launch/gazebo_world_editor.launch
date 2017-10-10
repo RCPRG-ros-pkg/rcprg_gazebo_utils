@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="GAZEBO_MODEL_PATH" default=""/>
+  <arg name="GAZEBO_RESOURCE_PATH" default=""/>
+
+  <env name="GAZEBO_MODEL_PATH" value="$(find rcprg_gazebo_utils)/data/gazebo/models:$(arg GAZEBO_MODEL_PATH)" />
+  <env name="GAZEBO_RESOURCE_PATH" value="$(find rcprg_gazebo_utils)/data/gazebo:$(arg GAZEBO_RESOURCE_PATH)" />
+
+  <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <arg name="paused" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="verbose" default="true"/>
+  <arg name="debug" default="false"/>
+  <arg name="world_name" default="worlds/blank.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+  <arg name="sim_clock_period" default="0.001"/>
+  <arg name="load_robot_description" default="true"/>
+
+  <arg name="use_kinect" default="false"/>
+
+  <arg name="ORO_LOGLEVEL" default="5"/>
+
+  <!-- set command arguments -->
+  <arg unless="$(arg paused)" name="command_arg1" value=""/>
+  <arg     if="$(arg paused)" name="command_arg1" value="-u"/>
+  <arg unless="$(arg headless)" name="command_arg2" value=""/>
+  <arg     if="$(arg headless)" name="command_arg2" value="-r"/>
+  <arg unless="$(arg verbose)" name="command_arg3" value=""/>
+  <arg     if="$(arg verbose)" name="command_arg3" value="--verbose"/>
+  <arg unless="$(arg debug)" name="script_type" value="gzserver"/>
+  <arg     if="$(arg debug)" name="script_type" value="debug"/>
+
+  <!-- start gazebo server-->
+  <node pkg="gazebo_ros" type="$(arg script_type)" name="velma_controller" respawn="false" output="screen"
+	args="$(arg command_arg1) $(arg command_arg2) $(arg command_arg3) $(arg world_name) -e ode -u --sim_clock_period $(arg sim_clock_period)" >
+    <env name="ORO_LOGLEVEL" value="$(arg ORO_LOGLEVEL)"/>
+<!--    <env name="LD_PRELOAD" value="librtt_malloc_hook.so" />-->
+  </node>
+
+  <!-- start gazebo client -->
+  <group if="$(arg gui)">
+    <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen"/>
+  </group>
+
+
+  <!-- load robot description-->
+  <param name="/use_sim_time" value="true"/>
+
+</launch>
