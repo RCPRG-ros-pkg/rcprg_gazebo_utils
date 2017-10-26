@@ -1,4 +1,10 @@
 #!/usr/bin/env python
+
+## Provides interactive 6D pose marker and allows moving object in Gazebo.
+# @ingroup utilities
+# @file gazebo_move_object.py
+# @namespace scripts.gazebo_move_object Provides interactive 6D pose marker and allows moving object in Gazebo
+
 import roslib; roslib.load_manifest('velma_controller')
 
 import sys

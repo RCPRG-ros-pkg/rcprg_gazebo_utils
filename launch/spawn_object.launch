@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="model" default=""/>
+  <arg name="model" />
   <arg name="x" default="2"/>
   <arg name="y" default="2"/>
   <arg name="z" default="2"/>
+  <arg name="GAZEBO_MODEL_PATH" default=""/>
 
-  <env name="GAZEBO_MODEL_PATH" value="$(find rcprg_gazebo_utils)/data/gazebo/models" />
+  <env name="GAZEBO_MODEL_PATH" value="$(arg GAZEBO_MODEL_PATH):$(find rcprg_gazebo_utils)/data/gazebo/models" />
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen" args="-file $(find rcprg_gazebo_utils)/data/gazebo/models/$(arg model)/model.sdf -sdf -model $(arg model) -gazebo_namespace gazebo -x $(arg x) -y $(arg y) -z $(arg z)" />
 </launch>
