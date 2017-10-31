@@ -14,7 +14,6 @@
   <arg name="verbose" default="true"/>
   <arg name="debug" default="false"/>
   <arg name="world_name" default="worlds/blank.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
-  <arg name="sim_clock_period" default="0.001"/>
   <arg name="load_robot_description" default="true"/>
 
   <arg name="use_kinect" default="false"/>
@@ -33,7 +32,7 @@
 
   <!-- start gazebo server-->
   <node pkg="gazebo_ros" type="$(arg script_type)" name="world_editor" respawn="false" output="screen"
-	args="$(arg command_arg1) $(arg command_arg2) $(arg command_arg3) $(arg world_name) -e ode -u --sim_clock_period $(arg sim_clock_period)" >
+	args="$(arg command_arg1) $(arg command_arg2) $(arg command_arg3) $(arg world_name) -e ode -u" >
     <env name="ORO_LOGLEVEL" value="$(arg ORO_LOGLEVEL)"/>
   </node>
 
