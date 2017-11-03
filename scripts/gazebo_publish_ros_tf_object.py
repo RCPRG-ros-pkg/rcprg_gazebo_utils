@@ -89,6 +89,10 @@ class GazeboTfPublisher:
             t.transform.translation.z = resp.link_state.pose.position.z
             t.transform.rotation = resp.link_state.pose.orientation
             self._br.sendTransform(t)
+            try:
+                rospy.sleep(0.1)
+            except:
+                break
 
 def printUsage():
     print "usage: gazebo_publish_ros_tf_object.py model_name::link_name frame_id"
