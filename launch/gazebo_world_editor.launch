@@ -10,11 +10,9 @@
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
   <arg name="paused" default="false"/>
   <arg name="gui" default="true"/>
-  <arg name="headless" default="false"/>
   <arg name="verbose" default="true"/>
   <arg name="debug" default="false"/>
   <arg name="world_name" default="worlds/blank.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
-  <arg name="load_robot_description" default="true"/>
 
   <arg name="use_kinect" default="false"/>
 
@@ -23,8 +21,6 @@
   <!-- set command arguments -->
   <arg unless="$(arg paused)" name="command_arg1" value=""/>
   <arg     if="$(arg paused)" name="command_arg1" value="-u"/>
-  <arg unless="$(arg headless)" name="command_arg2" value=""/>
-  <arg     if="$(arg headless)" name="command_arg2" value="-r"/>
   <arg unless="$(arg verbose)" name="command_arg3" value=""/>
   <arg     if="$(arg verbose)" name="command_arg3" value="--verbose"/>
   <arg unless="$(arg debug)" name="script_type" value="gzserver"/>
@@ -32,7 +28,7 @@
 
   <!-- start gazebo server-->
   <node pkg="gazebo_ros" type="$(arg script_type)" name="world_editor" respawn="false" output="screen"
-	args="$(arg command_arg1) $(arg command_arg2) $(arg command_arg3) $(arg world_name) -e ode -u" >
+	args="$(arg command_arg1) $(arg command_arg3) $(arg world_name) -e ode -u" >
     <env name="ORO_LOGLEVEL" value="$(arg ORO_LOGLEVEL)"/>
   </node>
 
