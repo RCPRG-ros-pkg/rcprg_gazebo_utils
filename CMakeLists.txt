@@ -13,6 +13,8 @@ install(DIRECTORY launch/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
   )
 
-catkin_install_python(PROGRAMS scripts/gazebo_move_object.py
+catkin_install_python(PROGRAMS
+  scripts/gazebo_move_object.py
+  scripts/gazebo_publish_ros_tf_object.py
 DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
