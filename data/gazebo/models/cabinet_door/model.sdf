@@ -272,6 +272,14 @@
           </script>
         </material>
       </visual>
+      <visual name="visual_marker_0">
+        <pose>0.007 -0.07 0 1.57075 0 1.57075</pose>
+        <geometry>
+          <mesh>
+            <uri>model://marker_0/meshes/marker_0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
     </link>
     <joint name="right_joint" type="revolute">
       <parent>cabinet</parent>
