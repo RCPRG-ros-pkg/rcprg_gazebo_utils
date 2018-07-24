@@ -5,7 +5,7 @@
     <include>
       <uri>model://sun</uri>
     </include>
-    <physics name='dart_1ms' default='1' type='ode'>
+    <physics name='dart_1ms' default='1' type='dart'>
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1</real_time_factor>
       <real_time_update_rate>1000</real_time_update_rate>
@@ -16,6 +16,21 @@
       <real_time_update_rate>500</real_time_update_rate>
     </physics>
     <physics name='dart_3ms' default='0' type='dart'>
+      <max_step_size>0.003</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>333</real_time_update_rate>
+    </physics>
+    <physics name='ode_1ms' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <physics name='ode_2ms' default='0' type='ode'>
+      <max_step_size>0.002</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>500</real_time_update_rate>
+    </physics>
+    <physics name='ode_3ms' default='0' type='ode'>
       <max_step_size>0.003</max_step_size>
       <real_time_factor>1</real_time_factor>
       <real_time_update_rate>333</real_time_update_rate>
