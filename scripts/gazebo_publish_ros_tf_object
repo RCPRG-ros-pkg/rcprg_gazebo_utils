@@ -2,7 +2,7 @@
 
 ## Publishes transform of object in Gazebo simulator.
 # @ingroup utilities
-# @file gazebo_publish_ros_tf_object.py
+# @file gazebo_publish_ros_tf_object
 # @namespace scripts.gazebo_publish_ros_tf_object Publishes transform of object in Gazebo simulator.
 
 # Copyright (c) 2017, Robot Control and Pattern Recognition Group,
@@ -95,7 +95,7 @@ class GazeboTfPublisher:
                 break
 
 def printUsage():
-    print "usage: gazebo_publish_ros_tf_object.py model_name::link_name frame_id"
+    print "usage: gazebo_publish_ros_tf_object model_name::link_name frame_id"
 
 if __name__ == "__main__":
 
