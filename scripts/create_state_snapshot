@@ -79,7 +79,7 @@ if __name__ == "__main__":
         print 'joint_names:', model_prop.joint_names
         for joint_name in model_prop.joint_names:
             joint_prop = get_joint_properties(model_name + '::' + joint_name)
-            if math.isnan(joint_prop.position):
+            if math.isnan(joint_prop.position[0]):
                 continue
             if joint_prop.type == GetJointPropertiesResponse.REVOLUTE or \
                     joint_prop.type == GetJointPropertiesResponse.CONTINUOUS or \
