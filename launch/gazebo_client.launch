@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <launch>
+  <node name="termtitle" pkg="rcprg_ros_utils" type="termtitle.py" args="gz_client" />
+
   <arg name="GAZEBO_MODEL_PATH" default=""/>
   <arg name="GAZEBO_RESOURCE_PATH" default=""/>
 
