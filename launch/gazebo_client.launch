@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-  <node name="termtitle-gz_client" pkg="rcprg_ros_utils" type="termtitle.py" output="screen"
+  <node name="termtitle_gz_client" pkg="rcprg_ros_utils" type="termtitle.py" output="screen"
   		args="gz_client" />
 
   <arg name="GAZEBO_MODEL_PATH" default=""/>
