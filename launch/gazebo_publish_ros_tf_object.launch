@@ -2,11 +2,13 @@
 <launch>
   <arg name="link_name" />
   <arg name="frame_id" />
+  <arg name="retry" default="true" />
 
   <node
-    name="pose_int_marker_$(arg frame_id)"
+    name="gazebo_publish_ros_tf_$(arg frame_id)"
     pkg="rcprg_gazebo_utils" type="gazebo_publish_ros_tf_object" output="screen">
     <param name="link_name" value="$(arg link_name)" />
     <param name="frame_id" value="$(arg frame_id)" />
+    <param name="retry" value="$(arg retry)" />
   </node>
 </launch>
