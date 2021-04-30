@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="jar_lid">
+    <link name="link">
+      <gravity>true</gravity>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.05</mass>
+        <inertia>
+          <ixx>0.00029</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00029</iyy>
+          <iyz>0</iyz>
+          <izz>0.00007</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://jar_lid/meshes/jar_lid.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>10000000.0</kp>
+              <kd>1.0</kd>
+              <min_depth>0.001</min_depth>
+              <max_vel>0.1</max_vel>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+      <collision name="collision2">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://jar_lid/meshes/jar_lid_pin.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>10000000.0</kp>
+              <kd>1.0</kd>
+              <min_depth>0.001</min_depth>
+              <max_vel>0.1</max_vel>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+      <visual name="visual1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://jar_lid/meshes/jar_lid.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="visual2">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://jar_lid/meshes/jar_lid_pin.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

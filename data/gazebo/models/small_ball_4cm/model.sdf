@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="small_ball_4cm">
+    <link name="link">
+      <gravity>true</gravity>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.02</mass>
+        <inertia>
+          <ixx>0.00012</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00012</iyy>
+          <iyz>0</iyz>
+          <izz>0.00012</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://small_ball_4cm/meshes/small_ball_4cm.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>10000000.0</kp>
+              <kd>1.0</kd>
+              <min_depth>0.001</min_depth>
+              <max_vel>0.1</max_vel>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://small_ball_4cm/meshes/small_ball_4cm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
