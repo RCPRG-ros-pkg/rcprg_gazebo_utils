@@ -275,7 +275,7 @@
         <pose>0.007 -0.07 0 1.57075 0 1.57075</pose>
         <geometry>
           <mesh>
-            <uri>model://marker_0/meshes/marker_0.dae</uri>
+            <uri>model://ar_marker_5cm_0/meshes/ar_marker_5cm.dae</uri>
           </mesh>
         </geometry>
       </visual>

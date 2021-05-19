@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
-  <model name="marker_0">
+  <model name="ar_marker_8cm_11">
     <link name="link">
       <gravity>false</gravity>
       <inertial>
@@ -19,7 +19,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://marker_0/meshes/marker_0.dae</uri>
+            <uri>model://ar_marker_8cm_11/meshes/ar_marker_8cm.dae</uri>
           </mesh>
         </geometry>
       </visual>
