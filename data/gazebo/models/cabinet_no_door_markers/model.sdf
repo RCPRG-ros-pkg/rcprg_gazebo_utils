@@ -170,7 +170,7 @@
         </material>
       </visual>
       <visual name='marker_0'>
-        <pose frame=''>0.13 0.2 -0.305 0 1.57079 0</pose>
+        <pose frame=''>0.17 0.2 -0.305 0 1.57079 0</pose>
         <geometry>
           <mesh>
             <uri>model://ar_marker_8cm_0/meshes/ar_marker_8cm.dae</uri>
@@ -178,7 +178,7 @@
         </geometry>
       </visual>
       <visual name='marker_1'>
-        <pose frame=''>0.13 -0.2 -0.305 0 1.57079 0</pose>
+        <pose frame=''>0.17 -0.2 -0.305 0 1.57079 0</pose>
         <geometry>
           <mesh>
             <uri>model://ar_marker_8cm_1/meshes/ar_marker_8cm.dae</uri>
