@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
-    <model name='table_a'>
+    <model name='table_b'>
       <static>1</static>
       <link name='link'>
         <visual name='surface'>
-          <pose frame=''>0 0 0.755 0 -0 0</pose>
+          <pose frame=''>0 0 0.73 0 0 0</pose>
           <geometry>
             <box>
-              <size>0.913 0.913 0.04</size>
+              <size>1.04 0.6 0.04</size>
             </box>
           </geometry>
           <material>
@@ -17,11 +17,11 @@
             </script>
           </material>
         </visual>
-        <visual name='column'>
-          <pose frame=''>0 0 0.37 0 -0 0</pose>
+        <visual name='leg_left'>
+          <pose frame=''>0.39 0 0.355 0 0 0</pose>
           <geometry>
             <box>
-              <size>0.042 0.042 0.74</size>
+              <size>0.1 0.5 0.71</size>
             </box>
           </geometry>
           <material>
@@ -31,11 +31,11 @@
             </script>
           </material>
         </visual>
-        <visual name='base'>
-          <pose frame=''>0 0 0.02 0 -0 0</pose>
+        <visual name='leg_right'>
+          <pose frame=''>-0.39 0 0.355 0 0 0</pose>
           <geometry>
             <box>
-              <size>0.56 0.56 0.04</size>
+              <size>0.1 0.5 0.71</size>
             </box>
           </geometry>
           <material>
@@ -45,11 +45,12 @@
             </script>
           </material>
         </visual>
+
         <collision name='surface'>
-          <pose frame=''>0 0 0.755 0 -0 0</pose>
+          <pose frame=''>0 0 0.73 0 0 0</pose>
           <geometry>
             <box>
-              <size>0.913 0.913 0.04</size>
+              <size>1.04 0.6 0.04</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -60,11 +61,11 @@
             </friction>
           </surface>
         </collision>
-        <collision name='column'>
-          <pose frame=''>0 0 0.37 0 -0 0</pose>
+        <collision name='leg_left'>
+          <pose frame=''>0.39 0 0.355 0 0 0</pose>
           <geometry>
             <box>
-              <size>0.042 0.042 0.74</size>
+              <size>0.1 0.5 0.71</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -75,11 +76,11 @@
             </friction>
           </surface>
         </collision>
-        <collision name='base'>
-          <pose frame=''>0 0 0.02 0 -0 0</pose>
+        <collision name='leg_right'>
+          <pose frame=''>-0.39 0 0.355 0 0 0</pose>
           <geometry>
             <box>
-              <size>0.56 0.56 0.04</size>
+              <size>0.1 0.5 0.71</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -90,19 +91,20 @@
             </friction>
           </surface>
         </collision>
+
         <visual name='marker_8'>
-          <pose frame=''>0.4 0.4 0.78 0 0 0</pose>
+          <pose frame=''>0.46 0.24 0.755 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://ar_marker_8cm_6/meshes/ar_marker_8cm.dae</uri>
+              <uri>model://ar_marker_8cm_8/meshes/ar_marker_8cm.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <visual name='marker_9'>
-          <pose frame=''>0.4 -0.4 0.78 0 0 0</pose>
+          <pose frame=''>-0.46 0.24 0.755 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://ar_marker_8cm_7/meshes/ar_marker_8cm.dae</uri>
+              <uri>model://ar_marker_8cm_9/meshes/ar_marker_8cm.dae</uri>
             </mesh>
           </geometry>
         </visual>
