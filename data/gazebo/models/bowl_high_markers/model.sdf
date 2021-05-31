@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="bowl_high_markers">
+    <link name="link">
+      <inertial>
+        <pose>0 0 0.035 0 0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.000250308</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.000250308</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.0004802</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://bowl_high/meshes/bowl_high.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bowl_high/meshes/bowl_high.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name='marker_16'>
+        <pose frame=''>-0.0495 -0.15 0.003 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://ar_marker_8cm_16/meshes/ar_marker_8cm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name='marker_17'>
+        <pose frame=''>0.0495 -0.15 0.003 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://ar_marker_8cm_17/meshes/ar_marker_8cm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name='marker_18'>
+        <pose frame=''>0.15 0 0.003 0 0 1.57079632679</pose>
+        <geometry>
+          <mesh>
+            <uri>model://ar_marker_8cm_18/meshes/ar_marker_8cm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name='marker_19'>
+        <pose frame=''>0 0.15 0.003 0 0 3.1415</pose>
+        <geometry>
+          <mesh>
+            <uri>model://ar_marker_8cm_19/meshes/ar_marker_8cm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name='marker_20'>
+        <pose frame=''>-0.15 0 0.003 0 0 4.71238898038</pose>
+        <geometry>
+          <mesh>
+            <uri>model://ar_marker_8cm_20/meshes/ar_marker_8cm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

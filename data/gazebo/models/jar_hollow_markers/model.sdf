@@ -188,6 +188,156 @@
         </geometry>
       </visual>
 
+      <collision name='marker_10'>
+        <pose frame=''>0 -0.0577 -0.015 1.570796327 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>10000000.0</kp>
+              <kd>1.0</kd>
+              <min_depth>0.001</min_depth>
+              <max_vel>0.1</max_vel>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <collision name='marker_15'>
+        <pose frame=''>-0.0484 -0.0275 -0.015 1.570796327 0 -1.047197551</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>10000000.0</kp>
+              <kd>1.0</kd>
+              <min_depth>0.001</min_depth>
+              <max_vel>0.1</max_vel>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <collision name='marker_14'>
+        <pose frame=''>-0.0493 0.0289 -0.015 1.570796327 0 -2.094395103</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>10000000.0</kp>
+              <kd>1.0</kd>
+              <min_depth>0.001</min_depth>
+              <max_vel>0.1</max_vel>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <collision name='marker_13'>
+        <pose frame=''>0 0.0577 -0.015 1.570796327 0 3.141592654</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>10000000.0</kp>
+              <kd>1.0</kd>
+              <min_depth>0.001</min_depth>
+              <max_vel>0.1</max_vel>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <collision name='marker_12'>
+        <pose frame=''>0.0484 0.0275 -0.015 1.570796327 0 2.094395103</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>10000000.0</kp>
+              <kd>1.0</kd>
+              <min_depth>0.001</min_depth>
+              <max_vel>0.1</max_vel>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <collision name='marker_11'>
+        <pose frame=''>0.0493 -0.0289 -0.015 1.570796327 0 1.047197551</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>10000000.0</kp>
+              <kd>1.0</kd>
+              <min_depth>0.001</min_depth>
+              <max_vel>0.1</max_vel>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+
       <visual name='marker_10'>
         <pose frame=''>0 -0.0775 -0.015 1.570796327 0 0</pose>
         <geometry>

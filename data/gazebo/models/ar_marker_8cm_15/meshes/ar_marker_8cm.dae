@@ -58,7 +58,7 @@
   </library_effects>
   <library_images>
     <image id="markerdata_png" name="markerdata_png">
-      <init_from>../materials/markerdata.png</init_from>
+      <init_from>../materials/MarkerData_15.png</init_from>
     </image>
   </library_images>
   <library_materials>
@@ -73,7 +73,7 @@
     <geometry id="Cylinder-mesh" name="Cylinder">
       <mesh>
         <source id="Cylinder-mesh-positions">
-          <float_array id="Cylinder-mesh-positions-array" count="24">-0.8 -0.8 -0.00999999 -0.8 0.8 -0.00999999 0.8 0.8 -0.00999999 0.8 -0.8 -0.00999999 -0.8 -0.8 0.00999999 -0.8 0.8 0.00999999 0.8 0.8 0.00999999 0.8 -0.8 0.00999999</float_array>
+          <float_array id="Cylinder-mesh-positions-array" count="24">-0.5 -0.5 -0.5 -0.5 0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5 0.5 -0.5 0.5</float_array>
           <technique_common>
             <accessor source="#Cylinder-mesh-positions-array" count="8" stride="3">
               <param name="X" type="float"/>
@@ -116,7 +116,7 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Cylinder" name="Cylinder" type="NODE">
-        <matrix sid="transform">0.05 0 0 0 0 0.05 0 0 0 0 0.1 0 0 0 0 1</matrix>
+        <matrix sid="transform">0.08 0 0 0 0 0.08 0 0 0 0 0.002 0 0 0 0 1</matrix>
         <instance_geometry url="#Cylinder-mesh" name="Cylinder">
           <bind_material>
             <technique_common>
