@@ -18,9 +18,10 @@
       <collision name="collision">
         <pose>0 0 0 0 0 0</pose>
         <geometry>
-          <mesh>
+          <sphere><radius>0.02</radius></sphere>
+          <!--<mesh>
             <uri>model://small_ball_4cm/meshes/small_ball_4cm.dae</uri>
-          </mesh>
+          </mesh>-->
         </geometry>
         <surface>
           <friction>
@@ -42,9 +43,10 @@
       <visual name="visual">
         <pose>0 0 0 0 0 0</pose>
         <geometry>
-          <mesh>
+          <sphere><radius>0.02</radius></sphere>
+          <!--<mesh>
             <uri>model://small_ball_4cm/meshes/small_ball_4cm.dae</uri>
-          </mesh>
+          </mesh>-->
         </geometry>
       </visual>
     </link>

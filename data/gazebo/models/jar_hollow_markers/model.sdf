@@ -15,6 +15,143 @@
           <izz>0.00012</izz>
         </inertia>
       </inertial>
+
+      <collision name="side1">
+        <pose>0.037581 0 -0.015 0 0 0</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <surface>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          <contact><ode><kp>10000000.0</kp><kd>1.0</kd><min_depth>0.001</min_depth><max_vel>0.1</max_vel></ode></contact>
+        </surface>
+      </collision>
+      <collision name="side2">
+        <pose>-0.037581 0 -0.015 0 0 0</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <surface>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          <contact><ode><kp>10000000.0</kp><kd>1.0</kd><min_depth>0.001</min_depth><max_vel>0.1</max_vel></ode></contact>
+        </surface>
+      </collision>
+      <collision name="side3">
+        <pose>0.018437 -0.033383 -0.015 0 0 -1.047166667</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <surface>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          <contact><ode><kp>10000000.0</kp><kd>1.0</kd><min_depth>0.001</min_depth><max_vel>0.1</max_vel></ode></contact>
+        </surface>
+      </collision>
+      <collision name="side4">
+        <pose>-0.018437 0.033383 -0.015 0 0 -1.047166667</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <surface>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          <contact><ode><kp>10000000.0</kp><kd>1.0</kd><min_depth>0.001</min_depth><max_vel>0.1</max_vel></ode></contact>
+        </surface>
+      </collision>
+      <collision name="side5">
+        <pose>-0.018437 -0.033383 -0.015 0 0 1.047166667</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <surface>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          <contact><ode><kp>10000000.0</kp><kd>1.0</kd><min_depth>0.001</min_depth><max_vel>0.1</max_vel></ode></contact>
+        </surface>
+      </collision>
+      <collision name="side6">
+        <pose>0.018437 0.033383 -0.015 0 0 1.047166667</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <surface>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          <contact><ode><kp>10000000.0</kp><kd>1.0</kd><min_depth>0.001</min_depth><max_vel>0.1</max_vel></ode></contact>
+        </surface>
+      </collision>
+      <collision name="bottom">
+        <pose>0 0 -0.09 0 0 0</pose>
+        <geometry>
+          <box><size>0.06 0.06 0.02</size></box>
+        </geometry>
+        <surface>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          <contact><ode><kp>10000000.0</kp><kd>1.0</kd><min_depth>0.001</min_depth><max_vel>0.1</max_vel></ode></contact>
+        </surface>
+      </collision>
+
+      <visual name="side1">
+        <pose>0.037581 0 -0.015 0 0 0</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <material>
+          <diffuse>0.7 0.7 0.7 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name="side2">
+        <pose>-0.037581 0 -0.015 0 0 0</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <material>
+          <diffuse>0.7 0.7 0.7 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name="side3">
+        <pose>0.018437 -0.033383 -0.015 0 0 -1.047166667</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <material>
+          <diffuse>0.7 0.7 0.7 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name="side4">
+        <pose>-0.018437 0.033383 -0.015 0 0 -1.047166667</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <material>
+          <diffuse>0.7 0.7 0.7 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name="side5">
+        <pose>-0.018437 -0.033383 -0.015 0 0 1.047166667</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <material>
+          <diffuse>0.7 0.7 0.7 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name="side6">
+        <pose>0.018437 0.033383 -0.015 0 0 1.047166667</pose>
+        <geometry>
+          <box><size>0.01 0.05 0.17</size></box>
+        </geometry>
+        <material>
+          <diffuse>0.7 0.7 0.7 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name="bottom">
+        <pose>0 0 -0.09 0 0 0</pose>
+        <geometry>
+          <box><size>0.06 0.06 0.02</size></box>
+        </geometry>
+        <material>
+          <diffuse>0.7 0.7 0.7 0.5</diffuse>
+        </material>
+      </visual>
+
+      <!--
       <collision name="collision1">
         <pose>0 0 0 0 0 0</pose>
         <geometry>
@@ -187,6 +324,7 @@
           </mesh>
         </geometry>
       </visual>
+      -->
 
       <collision name='marker_10'>
         <pose frame=''>0 -0.0577 -0.015 1.570796327 0 0</pose>

@@ -14,6 +14,117 @@
           <izz>0.0004802</izz>
         </inertia>
       </inertial>
+      <collision name="side1">
+        <pose>0.0301  0.07183 0.05588 -0.265282222222222 0 -0.3926875</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </collision>
+      <collision name="side2">
+        <pose>-0.03 0.0717  0.05588 -0.265282 0 0.3926875</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </collision>
+      <collision name="side3">
+        <pose>-0.0717 0.03  0.05588 -0.265282 0 1.1780625</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </collision>
+      <collision name="side4">
+        <pose>-0.0717 -0.03 0.05588 -0.265282 0 1.9634375</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </collision>
+      <collision name="side5">
+        <pose>-0.03 -0.0717 0.05588 -0.265282 0 2.7488125</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </collision>
+      <collision name="side6">
+        <pose>0.03  -0.0717 0.05588 -0.265282 0 3.5516402</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </collision>
+      <collision name="side7">
+        <pose>0.0717  -0.03 0.05588 -0.265282 0 4.3195625</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </collision>
+      <collision name="side8">
+        <pose>0.0717  0.03  0.05588 -0.265282 0 5.1223902</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </collision>
+      <collision name="bottom">
+        <pose>0  0  0.01 0 0 0</pose>
+        <geometry>
+          <box><size>0.1 0.1 0.02</size></box>
+        </geometry>
+      </collision>
+
+      <visual name="side1">
+        <pose>0.0301  0.07183 0.05588 -0.265282222222222 0 -0.3926875</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </visual>
+      <visual name="side2">
+        <pose>-0.03 0.0717  0.05588 -0.265282 0 0.3926875</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </visual>
+      <visual name="side3">
+        <pose>-0.0717 0.03  0.05588 -0.265282 0 1.1780625</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </visual>
+      <visual name="side4">
+        <pose>-0.0717 -0.03 0.05588 -0.265282 0 1.9634375</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </visual>
+      <visual name="side5">
+        <pose>-0.03 -0.0717 0.05588 -0.265282 0 2.7488125</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </visual>
+      <visual name="side6">
+        <pose>0.03  -0.0717 0.05588 -0.265282 0 3.5516402</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </visual>
+      <visual name="side7">
+        <pose>0.0717  -0.03 0.05588 -0.265282 0 4.3195625</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </visual>
+      <visual name="side8">
+        <pose>0.0717  0.03  0.05588 -0.265282 0 5.1223902</pose>
+        <geometry>
+          <box><size>0.07 0.015 0.08</size></box>
+        </geometry>
+      </visual>
+      <visual name="bottom">
+        <pose>0  0  0.01 0 0 0</pose>
+        <geometry>
+          <box><size>0.1 0.1 0.02</size></box>
+        </geometry>
+      </visual>
+
+  <!--
       <collision name="collision">
         <geometry>
           <mesh>
@@ -27,7 +138,7 @@
             <uri>model://bowl_high/meshes/bowl_high.dae</uri>
           </mesh>
         </geometry>
-      </visual>
+      </visual>-->
     </link>
   </model>
 </sdf>
