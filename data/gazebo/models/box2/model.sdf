@@ -7,12 +7,12 @@
         <mass>0.3</mass>
         <pose>0 0 0 0 0 0</pose>
         <inertia>
-          <ixx>0.29</ixx>
+          <ixx>0.00125</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.22</iyy>
+          <iyy>0.00125</iyy>
           <iyz>0</iyz>
-          <izz>0.21</izz>
+          <izz>0.0005</izz>
         </inertia>
       </inertial>
       <collision name="box">
