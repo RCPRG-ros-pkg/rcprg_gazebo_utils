@@ -530,6 +530,60 @@
         </geometry>
       </visual>
 
+      <visual name='under_marker_10'>
+        <pose frame=''>0 -0.0577 -0.015 1.570796327 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+      </visual>
+
+      <visual name='under_marker_15'>
+        <pose frame=''>-0.0484 -0.0275 -0.015 1.570796327 0 -1.047197551</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+      </visual>
+
+      <visual name='under_marker_14'>
+        <pose frame=''>-0.0493 0.0289 -0.015 1.570796327 0 -2.094395103</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+      </visual>
+
+      <visual name='under_marker_13'>
+        <pose frame=''>0 0.0577 -0.015 1.570796327 0 3.141592654</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+      </visual>
+
+      <visual name='under_marker_12'>
+        <pose frame=''>0.0484 0.0275 -0.015 1.570796327 0 2.094395103</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+      </visual>
+
+      <visual name='under_marker_11'>
+        <pose frame=''>0.0493 -0.0289 -0.015 1.570796327 0 1.047197551</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.14 0.04</size>
+          </box>
+        </geometry>
+      </visual>
+
     </link>
 
     <joint name="cap_hinge" type="revolute">
