@@ -40,8 +40,9 @@ install(DIRECTORY launch/
   )
 
 catkin_install_python(PROGRAMS
-  scripts/gazebo_move_object
-  scripts/gazebo_publish_ros_tf_object
-  scripts/create_state_snapshot
+  scripts/create_gazebo_ar_markers.py
+  scripts/gazebo_move_object.py
+  scripts/gazebo_publish_ros_tf_object.py
+  scripts/create_state_snapshot.py
 DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 

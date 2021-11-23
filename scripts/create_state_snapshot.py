@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 
-## Publishes marker: camera frustum.
+## A script that creates state snapshot for simulated world in Gazebo.
 # @ingroup utilities
-# @file publish_camera_frustum.py
-# @namespace scripts.publish_camera_frustum Publishes marker: camera frustum
+# @file create_state_snapshot.py
 
-# Copyright (c) 2017, Robot Control and Pattern Recognition Group,
+# Copyright (c) 2021, Robot Control and Pattern Recognition Group,
 # Institute of Control and Computation Engineering
 # Warsaw University of Technology
 #
@@ -92,4 +91,3 @@ if __name__ == "__main__":
     with open('state_snapshot.txt', 'w') as f:
         for line in file_lines:
             f.write(line + '\n')
-

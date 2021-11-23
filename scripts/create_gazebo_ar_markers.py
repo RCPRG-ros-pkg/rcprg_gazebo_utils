@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+## A script that generates AR markers that can be used in Gazebo.
+# @ingroup utilities
+# @file create_gazebo_ar_markers.py
+
 # Copyright (c) 2021, Robot Control and Pattern Recognition Group,
 # Institute of Control and Computation Engineering
 # Warsaw University of Technology
@@ -286,14 +290,4 @@ if __name__ == "__main__":
     for marker_id in range(0, 35):
         createMarkerGazeboModel('.', 8, marker_id)
     exit(0)
-
-    rospy.init_node('gazebo_move_object', anonymous=True)
-
-    if len(sys.argv) != 2:
-        printUsage()
-        exit(1)
-
-    int_markers = IntMarkers6D(sys.argv[1])
-
-    rospy.spin()
 

@@ -2,8 +2,7 @@
 
 ## Provides interactive 6D pose marker and allows moving object in Gazebo.
 # @ingroup utilities
-# @file gazebo_move_object
-# @namespace scripts.gazebo_move_object Provides interactive 6D pose marker and allows moving object in Gazebo
+# @file gazebo_move_object.py
 
 # Copyright (c) 2017, Robot Control and Pattern Recognition Group,
 # Institute of Control and Computation Engineering
